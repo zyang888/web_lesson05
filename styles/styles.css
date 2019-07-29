@@ -27,23 +27,28 @@ h1, h2, h3, h4 {
 
 img {
   max-width:100%;
+  transition: all 1s ease-out;
+}
+
+img:hover, img:focus {
+  border: 15px solid red;
 }
 
 blockquote {
-  padding: 0px;
   font-size: 22px
-}
-
-footer {
-  clear: both;
-  color: white;
-  padding: 30px 0px 30px 0px;
 }
 
 nav a {
   color: #BD93F2;
   font-weight: bold;
   padding: 0px 10px 0px;
+  text-transform: uppercase;
+  transition: all 1s ease-out;
+}
+
+a:hover, a:focus {
+  background-color: #BD93F2;
+  color: #282A36;
 }
 
 section a {
@@ -54,8 +59,32 @@ ul a {
   color: white;
 }
 
+li:nth-child(odd) {
+  color: #6BE5FD;
+}
+
+li:nth-child(even) {
+  color: #FF79C0;
+}
+
 ul {
   padding-left: 20px;
+}
+
+.grey {
+  color: #8492B1;
+}
+
+.green {
+  color: #50FA78;
+}
+
+.pink {
+  color: #FF79C0;
+}
+
+.blue {
+  color: #6BE5FD;
 }
 
 .container {
@@ -75,10 +104,6 @@ ul {
   width: 25%;
   margin-left: auto;
   /* margin-left push to the right!!! */
-}
-
-.margin-left0 {
-  margin-left: 0px;
 }
 
 .mainwidth {

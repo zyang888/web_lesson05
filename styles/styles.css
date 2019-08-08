@@ -90,11 +90,11 @@ ul {
 }
 
 li:nth-child(odd) {
-  color: #6BE5FD;
+  color: var(--color_blue);
 }
 
 li:nth-child(even) {
-  color: #FF79C0;
+  color: var(--color_pink);
 }
 
 
@@ -156,7 +156,7 @@ button, input, select, textarea, label {
 }
 
 input[type=tel]:focus {
-  background-color: seagreen;
+  /* background-color: seagreen; */
   outline: none;
 }
 
@@ -206,17 +206,17 @@ fieldset label {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: var(--color_grey);
 }
 
 /* on mouse-over, add a grey background color */
 .checkbox label:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: var(--color_black);
 }
 
 /* When the checkbox is checked, add a blue background */
 input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: var(--color_blue);
 }
 
 /* create the checkmark/ indicator (hidden when not checked) */

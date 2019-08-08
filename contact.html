@@ -24,10 +24,8 @@
   </nav>
 
   <section class="contact-main aligncenter">
-    <div class="contact-header">
-      <h2>How would you like your lobster?</h2>
-      <p>Please fill the entries listed below to book your order</p>
-    </div>
+    <h2>How would you like your lobster?</h2>
+    <p>Please fill the entries listed below to book your order</p>
 
     <form name="order" method="GET">
       <fieldset>
@@ -68,8 +66,8 @@
       <label>Your email:
         <input type="email" name="customerEmail">
       </label>
-      <label>Your phone number:
-        <input type="tel" min="10" max="11" name="phone" value="123-456-7890">
+      <label>Your phone number: (123-456-7890)
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
       </label>
       <label>Revervation date:
         <input type="date" name="reservationDate">

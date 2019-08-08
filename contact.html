@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ZT Yang</title>
+  <script src="https://kit.fontawesome.com/25b102b7df.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+
+<body>
+
+  <header class="center">
+    <h1>ZT Yang</h1>
+    <h2>Seattle's <span class="green">Premium</span> Chinese Cook</h2>
+  </header>
+
+  <nav class="nav-container center">
+    <a href="index.html">About Me</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html">Store</a>
+    <a href="contact.html">Calendar</a>
+    <a href="contact.html">Other</a>
+  </nav>
+
+  <section class="contact-main aligncenter">
+    <div class="contact-header">
+      <h2>How would you like your lobster?</h2>
+      <p>Please fill the entries listed below to book your order</p>
+    </div>
+
+    <form name="order" method="GET">
+      <fieldset>
+        <legend>How would you like your lobster be cooked?</legend>
+        <label>Scallion and ginger
+          <input type="radio" name="cookMethod" value="sg">
+        </label>
+        <label>Garlic and ginger
+          <input type="radio" name="cookMethod" value="gg">
+        </label>
+      </fieldset>
+      <fieldset class="checkbox">
+        <legend>Add-ons for your lobster</legend>
+        <label>Black beans
+          <input type="checkbox" name="addOns" value="blackBeans">
+          <span class="checkmark"></span>
+        </label>
+        <label>Rice noodles
+          <input type="checkbox" name="addOns" value="riceNoodles">
+          <span class="checkmark"></span>
+        </label>
+        <label>Wheat noodles
+          <input type="checkbox" name="addOns" value="wheatNoodles">
+          <span class="checkmark"></span>
+        </label>
+        <label>Scallops
+          <input type="checkbox" name="addOns" value="Scallops">
+          <span class="checkmark"></span>
+        </label>
+        <label>Mussels
+          <input type="checkbox" name="addOns" value="Mussels">
+          <span class="checkmark"></span>
+        </label>
+      </fieldset>
+      <label>Your name:
+        <input type="text" name="customerName">
+      </label>
+      <label>Your email:
+        <input type="email" name="customerEmail">
+      </label>
+      <label>Your phone number:
+        <input type="tel" min="10" max="11" name="phone" value="123-456-7890">
+      </label>
+      <label>Revervation date:
+        <input type="date" name="reservationDate">
+      </label>
+      <label>Arrival time:
+        <select name="reservationTime">
+          <option value="">Please select</option>
+          <option value="4">4 PM</option>
+          <option value="5">5 PM</option>
+          <option value="6">6 PM</option>
+          <option value="7">7 PM</option>
+        </select>
+      </label>
+      <label>Guest number:
+        <input type="number" name="guestNumber">
+      </label>
+      <label>Leave a message
+        <textarea name="customerMessage" rows="10" cols="50">Default Value</textarea>
+      </label>
+      <input type="submit" value="Order Now!">
+    </form>
+  </section>
+
+  <footer class="center">
+    <i class="fab fa-d-and-d"></i>
+    <br>
+    <p>&copy; Flaming Dragon, LLC | Seattle, WA<p>
+      <br>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-weixin"></i>
+    </footer>
+
+  </body>
